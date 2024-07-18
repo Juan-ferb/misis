@@ -1,0 +1,320 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-header {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    flex: 1;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.main-header .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.nav-link, .dropdown-item {
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    color: #ffffff !important;
+    background-color: #dc3545 !important;
+    border-radius: 10px;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.escudo-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+
+.escudo {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    transform: translateX(50%);
+    clip-path: inset(0 0 0 50%);
+}
+
+.contacto {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: #dc3545;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+    padding: 5px 10px;
+}
+
+.contact-link:hover {
+    color: #ffffff;
+    background-color: #dc3545;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #dc3545;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #f8f9fa;
+}
+
+.footer i {
+    font-size: 1.2rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container .register-link {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container .register-link:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-header {
+    background-color: #dc3545; /* Mismo color que el botón de Iniciar Sesión */
+    color: white;
+}
+
+
+/* Navbar CSS */
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s;
+    border-radius: 50px; /* Ovalado */
+}
+
+.navbar-nav .nav-link:hover::after {
+    background-color: #dc3545; /* Rojo */
+    height: 4px; /* Aumenta el grosor del subrayado al pasar el cursor */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Para el botón de Iniciar Sesión */
+.navbar-nav .btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .btn:hover {
+    background-color: #ffffff;
+    color: #dc3545;
+}
+
+/* Footer CSS */
+.footer {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center; /* Centrando la información */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #f8f9fa;
+}
+
+.footer i {
+    font-size: 1.2rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Content CSS */
+.container {
+    margin-top: 20px;
+}
+
+.malla-curricular {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.malla-curricular:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-periodo {
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px; /* Ovalado */
+    font-size: 1.2rem;
+}
+
+.btn-periodo:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+h5 {
+    margin-bottom: 15px;
+}
