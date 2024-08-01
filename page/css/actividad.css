@@ -161,6 +161,7 @@ h5 {
         width: 100px;
     }
 }
+
 .materias-button {
     width: 100%;
     margin: 5px 0;
@@ -170,10 +171,14 @@ h5 {
     border: none;
     text-align: center;
     padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
 .materias-button:hover {
     background-color: #c82333; /* Rojo oscuro al pasar el cursor */
+    transform: scale(1.1);
+    color: white; /* Asegura que el texto permanezca blanco */
 }
 
 .btn-periodo {
