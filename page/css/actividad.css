@@ -161,3 +161,21 @@ h5 {
         width: 100px;
     }
 }
+.materias-button {
+    width: 100%;
+    margin: 5px 0;
+    background-color: #dc3545; /* Rojo similar al del botón "MÁS" */
+    color: white;
+    border-radius: 25px; /* Bordes redondeados */
+    border: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.materias-button:hover {
+    background-color: #c82333; /* Rojo oscuro al pasar el cursor */
+}
+
+.btn-periodo {
+    border-radius: 25px; /* Bordes redondeados */
+}

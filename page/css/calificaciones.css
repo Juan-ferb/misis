@@ -1,0 +1,17 @@
+.grade-input {
+    width: 50px;
+    display: inline-block;
+    margin: 2px;
+}
+.subject-button {
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.subject-button:hover {
+    background-color: #c82333;
+}
