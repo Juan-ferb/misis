@@ -9,3 +9,22 @@ document.getElementById('role').addEventListener('change', function () {
         document.getElementById('code').required = false;
     }
 });
+
+const form = document.getElementById("userForm");
+
+form.addEventListener("submit", function (e){
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("../php/create.php", {
+        method: "POST",
+        body: formData,
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Usuario registrado", data);
+        form.reset();
+    })
+    .catch(error => console.error("Error al registrar usuario:", error))
+});
