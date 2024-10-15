@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Carlos Pérez Mejía</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/actividad.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="../php/dashboard_estudiante.php">
+            <img src="../images/logo.png" width="30" height="30" alt="">
+            EDUCA
+        </a>
+    </nav>
+    <!-- Main Content -->
+    <div class="container text-center mt-5 pt-5">
+        <h2 class="animated-title">Institución Educativa Carlos Pérez Mejía</h2>
+        <div class="my-4">
+            <div class="malla-curricular">
+                INFORMACIÓN INSTITUCIONAL
+            </div>
+        </div>
+        <p class="info-text">Conoce más sobre nuestra historia, misión, visión y valores.</p>
+        <br>
+        <div class="row my-4">
+            <!-- Historia -->
+            <div class="col-md-4">
+                <div class="card period-card d-flex flex-column align-items-center">
+                    <h5>Historia</h5>
+                    <button class="btn btn-danger btn-periodo" data-toggle="collapse" data-target="#historia">MÁS</button>
+                    <div id="historia" class="collapse">
+                        <div class="d-flex flex-column">
+                            <p>Fundada en 1975, la Institución Educativa Carlos Pérez Mejía ha sido un pilar en la formación académica de jóvenes en la región. Desde sus inicios, la institución ha buscado proporcionar una educación integral basada en valores y en la excelencia académica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Misión -->
+            <div class="col-md-4">
+                <div class="card period-card d-flex flex-column align-items-center">
+                    <h5>Misión</h5>
+                    <button class="btn btn-danger btn-periodo" data-toggle="collapse" data-target="#mision">MÁS</button>
+                    <div id="mision" class="collapse">
+                        <div class="d-flex flex-column">
+                            <p>Formar estudiantes íntegros y competentes, capaces de enfrentar los desafíos del mundo moderno con ética, responsabilidad y un fuerte compromiso social.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Visión -->
+            <div class="col-md-4">
+                <div class="card period-card d-flex flex-column align-items-center">
+                    <h5>Visión</h5>
+                    <button class="btn btn-danger btn-periodo" data-toggle="collapse" data-target="#vision">MÁS</button>
+                    <div id="vision" class="collapse">
+                        <div class="d-flex flex-column">
+                            <p>Ser reconocidos como una institución educativa líder a nivel nacional, comprometida con la innovación pedagógica y el desarrollo de ciudadanos globales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <!-- Valores -->
+            <div class="col-md-4">
+                <div class="card period-card d-flex flex-column align-items-center">
+                    <h5>Valores</h5>
+                    <button class="btn btn-danger btn-periodo" data-toggle="collapse" data-target="#valores">MÁS</button>
+                    <div id="valores" class="collapse">
+                        <div class="d-flex flex-column">
+                            <ul>
+                                <li>Respeto</li>
+                                <li>Responsabilidad</li>
+                                <li>Compromiso</li>
+                                <li>Integridad</li>
+                                <li>Excelencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Instalaciones -->
+            <div class="col-md-4">
+                <div class="card period-card d-flex flex-column align-items-center">
+                    <h5>Instalaciones</h5>
+                    <button class="btn btn-danger btn-periodo" data-toggle="collapse" data-target="#instalaciones">MÁS</button>
+                    <div id="instalaciones" class="collapse">
+                        <div class="d-flex flex-column">
+                            <p>Nuestra institución cuenta con modernas instalaciones que incluyen laboratorios de ciencia, aulas tecnológicas, una biblioteca con recursos digitales y un amplio espacio deportivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <div class="card period-card d-flex flex-column align-items-center">
+                    <h5>Contacto</h5>
+                    <button class="btn btn-danger btn-periodo" data-toggle="collapse" data-target="#contacto">MÁS</button>
+                    <div id="contacto" class="collapse">
+                        <div class="d-flex flex-column">
+                            <p>Dirección: Calle Ficticia 123, Ciudad Imaginaria</p>
+                            <p>Teléfono: (123) 456-7890</p>
+                            <p>Email: contacto@institucioncpm.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer bg-danger text-white text-center">
+        <div class="container py-2">
+            <p>&copy; 2024 - Institución Educativa Carlos Pérez Mejía - <a href="#" class="text-white">Política de Privacidad</a></p>
+            <div class="social-icons mt-2">
+                <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

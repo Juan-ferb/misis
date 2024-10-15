@@ -1,0 +1,6 @@
+#calendarModal .modal-dialog {
+    max-width: 65%; /* Puedes ajustar este valor */
+}
+#calendar {
+    height: 300px; /* Ajusta la altura según necesites */
+}

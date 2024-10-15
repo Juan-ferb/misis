@@ -1,0 +1,186 @@
+/* Navbar CSS */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s;
+    border-radius: 50px; /* Ovalado */
+}
+
+.navbar-nav .nav-link:hover::after {
+    background-color: #dc3545; /* Rojo */
+    height: 4px; /* Aumenta el grosor del subrayado al pasar el cursor */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Para el botón de Iniciar Sesión */
+.navbar-nav .btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .btn:hover {
+    background-color: #ffffff;
+    color: #dc3545;
+}
+
+/* Footer CSS */
+.footer {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center; /* Centrando la información */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #f8f9fa;
+}
+
+.footer i {
+    font-size: 1.2rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Content CSS */
+.container {
+    margin-top: 20px;
+}
+
+.animated-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animated-title::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #dc3545;
+    display: block;
+    margin: 10px auto 0;
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.malla-curricular {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.malla-curricular:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-periodo {
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 120px;
+    height: 60px;
+    border-radius: 30px; /* Ovalado */
+    font-size: 1.2rem;
+}
+
+.btn-periodo:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+h5 {
+    margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+.materias-button {
+    width: 100%;
+    margin: 5px 0;
+    background-color: #dc3545; /* Rojo similar al del botón "MÁS" */
+    color: white;
+    border-radius: 25px; /* Bordes redondeados */
+    border: none;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.materias-button:hover {
+    background-color: #c82333; /* Rojo oscuro al pasar el cursor */
+    transform: scale(1.1);
+    color: white; /* Asegura que el texto permanezca blanco */
+}
+
+.btn-periodo {
+    border-radius: 25px; /* Bordes redondeados */
+}

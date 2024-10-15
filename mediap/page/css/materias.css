@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.animated-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animated-title::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #dc3545;
+    display: block;
+    margin: 10px auto 0;
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* List Styles */
+.materia-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.materia-list li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.materia-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.materia-list a {
+    text-decoration: none;
+    color: #dc3545;
+    transition: color 0.3s;
+}
+
+.materia-list a:hover {
+    color: #c82333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #f8f9fa;
+}
+
+.footer i {
+    font-size: 1.2rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
